@@ -1,0 +1,127 @@
+{
+  "timestamp": "2022-11-18T00:23:04.700073+0100",
+  "flow_id": 177948655281251,
+  "pcap_cnt": 2201,
+  "event_type": "tls",
+  "src_ip": "172.17.0.153",
+  "src_port": 50794,
+  "dest_ip": "193.200.16.175",
+  "dest_port": 443,
+  "proto": "TCP",
+  "pkt_src": "wire/pcap",
+  "tls": {
+    "subject": "C=AU, ST=Some-State, O=Internet Widgits Pty Ltd",
+    "issuerdn": "C=AU, ST=Some-State, O=Internet Widgits Pty Ltd",
+    "serial": "2A:36:8F:7A:B0:73:8B:2D:AD:4F:6B:40:82:49:E4:7A:26:F5:EC:CA",
+    "fingerprint": "29:53:67:bc:9b:c3:49:4b:c5:cc:6c:a7:84:d8:5a:6b:4c:af:bf:9d",
+    "version": "TLS 1.2",
+    "notbefore": "2022-11-17T11:23:52",
+    "notafter": "2023-11-17T11:23:52",
+    "ja3": {
+      "hash": "c12f54a3f91dc7bafd92cb59fe009a35",
+      "string": "771,49196-49195-49200-49199-159-158-49188-49187-49192-49191-49162-49161-49172-49171-157-156-61-60-53-47-10,10-11-13-35-23-65281,29-23-24,0"
+    },
+    "ja3s": {
+      "hash": "76c691f46143bf86e2d1bb73c6187767",
+      "string": "771,49199,65281-11-23"
+    }
+  }
+}
+{
+  "timestamp": "2022-11-18T00:23:04.700226+0100",
+  "flow_id": 177948655281251,
+  "pcap_cnt": 2202,
+  "event_type": "alert",
+  "src_ip": "193.200.16.175",
+  "src_port": 443,
+  "dest_ip": "172.17.0.153",
+  "dest_port": 50794,
+  "proto": "TCP",
+  "pkt_src": "wire/pcap",
+  "tx_id": 0,
+  "alert": {
+    "action": "allowed",
+    "gid": 1,
+    "signature_id": 2011540,
+    "rev": 7,
+    "signature": "ET POLICY OpenSSL Demo CA - Internet Widgits Pty (O)",
+    "category": "Not Suspicious Traffic",
+    "severity": 3,
+    "metadata": {
+      "created_at": [
+        "2010_09_27"
+      ],
+      "former_category": [
+        "POLICY"
+      ],
+      "updated_at": [
+        "2022_05_03"
+      ]
+    }
+  },
+  "tls": {
+    "subject": "C=AU, ST=Some-State, O=Internet Widgits Pty Ltd",
+    "issuerdn": "C=AU, ST=Some-State, O=Internet Widgits Pty Ltd",
+    "serial": "2A:36:8F:7A:B0:73:8B:2D:AD:4F:6B:40:82:49:E4:7A:26:F5:EC:CA",
+    "fingerprint": "29:53:67:bc:9b:c3:49:4b:c5:cc:6c:a7:84:d8:5a:6b:4c:af:bf:9d",
+    "version": "TLS 1.2",
+    "notbefore": "2022-11-17T11:23:52",
+    "notafter": "2023-11-17T11:23:52",
+    "ja3": {
+      "hash": "c12f54a3f91dc7bafd92cb59fe009a35",
+      "string": "771,49196-49195-49200-49199-159-158-49188-49187-49192-49191-49162-49161-49172-49171-157-156-61-60-53-47-10,10-11-13-35-23-65281,29-23-24,0"
+    },
+    "ja3s": {
+      "hash": "76c691f46143bf86e2d1bb73c6187767",
+      "string": "771,49199,65281-11-23"
+    }
+  },
+  "app_proto": "tls",
+  "direction": "to_client",
+  "flow": {
+    "pkts_toserver": 4,
+    "pkts_toclient": 4,
+    "bytes_toserver": 474,
+    "bytes_toclient": 1436,
+    "start": "2022-11-18T00:23:04.303575+0100",
+    "src_ip": "172.17.0.153",
+    "dest_ip": "193.200.16.175",
+    "src_port": 50794,
+    "dest_port": 443
+  }
+}
+{
+  "timestamp": "2022-11-18T00:15:50.679879+0100",
+  "flow_id": 177948655281251,
+  "event_type": "flow",
+  "src_ip": "172.17.0.153",
+  "src_port": 50794,
+  "dest_ip": "193.200.16.175",
+  "dest_port": 443,
+  "proto": "TCP",
+  "app_proto": "tls",
+  "flow": {
+    "pkts_toserver": 10,
+    "pkts_toclient": 14,
+    "bytes_toserver": 1426,
+    "bytes_toclient": 2396,
+    "start": "2022-11-18T00:23:04.303575+0100",
+    "end": "2022-11-18T00:23:36.678070+0100",
+    "age": 32,
+    "state": "closed",
+    "reason": "shutdown",
+    "alerted": true
+  },
+  "tcp": {
+    "tcp_flags": "1b",
+    "tcp_flags_ts": "1b",
+    "tcp_flags_tc": "1b",
+    "syn": true,
+    "fin": true,
+    "psh": true,
+    "ack": true,
+    "state": "closed",
+    "ts_max_regions": 1,
+    "tc_max_regions": 1
+  }
+}
