@@ -8,18 +8,4 @@ class SuricataEvent:
         self.dest_port = dest_port
         self.proto = proto
         self.flow_id = flow_id
-    
-    @classmethod
-    def from_dict(cls, event_data):
-        return cls(
-            event_data['timestamp'],
-            event_data['event_type'],
-            event_data['src_ip'],
-            event_data['dest_ip'],
-            event_data['src_port'],
-            event_data['dest_port'],
-            event_data['proto'],
-            event_data['flow_id']
-        )
-
 
